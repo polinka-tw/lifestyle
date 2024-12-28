@@ -9,23 +9,31 @@
 
 
 <body>
-<div class="header">
-    <!--шапка сайта-->
+  <script src="script.js"></script>
+<div class="header" id="section1">
+<!--шапка сайта-->
       <div class="container-header">
+<!--линия верхнего меню-->        
         <div class="header-line">
-  <!--логотип-->
+<!--логотип-->
             <div class="header-logo">
               LifeStyle
             </div>
-  <!--навигация-->
-            <div class="nav">
-              <a class="nav-item" href="#">Главная</a>
-              <a class="nav-item" href="#">О нас</a>
-              <a class="nav-item" href="#">Услуги</a>
-              <a class="nav-item" href="#">Тренеры</a>
+<!--бургер-->        
+            <div class="burger_menu">
+              <span></span>
             </div>
-         
- <!--телефон-->
+<!--навигация-->
+            <div class="nav">
+              <a class="nav-item" href="#section1">Главная</a>
+              <a class="nav-item" href="#section2">О нас</a>
+              <a class="nav-item" href="#section3">Услуги</a>
+              <a  class="nav-item" href="#section4">Тренеры</a>
+            </div>
+<!--кнопка-->     
+            <button id="scrollToTopBtn">↑</button>
+
+<!--телефон-->
           <div class="phone">
             <div class="phone-holder">
             <div class="phone-img">
@@ -38,16 +46,16 @@
            Свяжитесь с нами для <br> консультации
             </div>
           </div>
+
 <!--кнопка для связи-->
           <div class="btn">
-  <a class="button" href="#">Связаться</a>
+  <a class="button" href="#section4">Связаться</a>
           </div>
-          <div class="menu-down">
-  <a href=""><img src="меню.png" height="30" width="30" alt=""> </a>
-          </div>
+          
+
         </div>
 <!--Текст по центру-->
-   <div clas="header-down">
+   <div class="header-down">
      <div class="header-title">
       Добро пожаловать в
            <div class="header-subtitle">
@@ -55,7 +63,7 @@
            </div>
            <div class="header-subtitle2">Территория умного фитнеса</div>
            <div class="header-button-about">
-            <a href="#" class="a-about">О нас</a>
+            <a href="#section2" class="a-about">О нас</a>
            </div>
       </div>
    </div>
@@ -63,14 +71,28 @@
 </div>
 
  <!--Стань лучшей версией себя-->
-<div class="container-best">
+<div class="container-best" id="section2">
     <div class="best">
   Стань лучшей версией себя 
     </div>
-    <div class="image-best">
-      <img src="стрелка вниз.png"  height="80px" width="80px " alt="">
-    </div>
 </div>  
+
+<!--Вставить картинку или еще какой-то текст-->
+<div class="adout_us"> 
+  <div class="about-content">
+    <div class="about-img">
+      <img class="about-image" src="о нас.jpg" height="406px" width="541px" alt="">
+    </div>
+    <div class="about-text">
+      <h2>Наша философия</h2>
+      <p>Мы знаем, как должно работать ваше тело. Мы даем вам почувствовать, каким красивым, сильным и ловким оно может быть. Мы умеем обучать вас. Мы расправляем ваши плечи – в прямом и переносном смыслах.</p>
+      <p>  Мы знаем о фитнесе все и умеем делать с вашим телом то, чего не умеют делать другие.</p>
+      <h2>LifeStyle - это не просто зал</h2>
+      <p>Фитнес-центр Lifestyle был открыт в 2014 году, но с февраля 2019 года после смены владельцев начался новый этап жизни Lifestyle.</p>
+      <p>Мы перепроверили качество всех фитнес-услуг, провели аттестацию, поменяли тренерский состав и сделали Lifestyle территорией умного фитнеса.</p>
+    </div>
+  </div>
+</div>
 
 <!--Карточки "Достижения"-->
 <div class="cards">
@@ -139,7 +161,7 @@
 </div>
 
 <!--Подиска, клубная карта, фитнес-день-->
-<div class="subscribe">
+<div class="subscribe" >
   <div class="sub-discription">Посещать фитнес-центр можно по подписке, клубной карте либо фитнес дню.</div>
     <div class="container-subscribe">
         <div class="sub under">Подписка
@@ -169,7 +191,7 @@
 </div>
 
 <!--услуги-->
-<div class="services">
+<div class="services" id="section3">
     <div class="services-holder">
       <!--услуга-->
       <div class="service">
@@ -258,5 +280,73 @@
      
     </div>
 </div>
+
+<!--тренеры-->
+<div class="trainers" id="section4">
+  <div class="trainers-disc">
+    <h2>Тренеры LifeStyle</h2>
+    <p>Мы – профессионалы фитнеса. Преподаватели учебного центра “Фитнес-образование” и ведущие специалисты фитнес-индустрии, которые прошли все необходимые стадии обучения и владеют нужными навыками.</p>
+      <p>Более 96% клиентов, которые пришли на первую тренировку, остаются заниматься у тренера на постоянной основе.</p>
+  </div>
+    <div class="personal-trainers-container">
+      <div class="trainer-holder">
+      <div class="persona 1">
+        <img class="img-trainer" src="IMG_2086.PNG" alt="">
+        <p>ПОЛИНА БОГАЧЕВА</p>
+      </div>
+      <div class="persona 2">
+        <img class="img-trainer" src="IMG_2086.PNG" alt="">
+      <p>ПОЛИНА БОГАЧЕВА</p>
+      </div>
+      <div class="persona 3">
+        <img class="img-trainer" src="IMG_2086.PNG" alt="">
+        <p>ПОЛИНА БОГАЧЕВА</p>
+      </div>
+      <div class="persona 4">
+        <img class="img-trainer" src="IMG_2086.PNG" alt="">
+      <p>ПОЛИНА БОГАЧЕВА</p>
+      </div>
+    </div>
+      </div>
+    </div>
+
+
+<!--Форма-->
+<div class="forms" id="section4" >
+  <div class="formtitle">Форма обратной связи</div>
+
+<form action="https://getform.io/f/bvrrdgob" method="POST">
+<label for="name">Ваше имя:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Ваш email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="feedback">Ваш отзыв:</label>
+<textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+<button type="submit">Отправить</button>
+</form>
+</div>
+</div>
+
+<!--футер-->
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      2024 LifeStyle
+      <br>сделай жизнь лучше
+    </div>
+    <div class="footer-social">
+     <a class="footer-a" href="https://www.instagram.com/ineewty?igsh=ZHRpemMyYXYxZm1z">INST</a> | <a class="footer-a"href="https://vk.com/music/playlist/506618055_76_a4c4f41237a83bb2e9">VK</a> | <a class="footer-a"href="">YOUTUBE</a> 
+    </div>
+    <div class="footer-contacts">
+      <p>Адрес: Минск, пр-т Машерова, 85а</p>
+      <p>Email: lifestylefit@gmail.com</p>
+    </div>
+  </div>
+
+</footer>
+
 </body>
 </html> 
