@@ -195,7 +195,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 500px;
+  
     text-align: justify;
 }
 .about-img{
@@ -403,7 +403,6 @@ li{
 
 .trainers{
     background-color: black;
-    height: 730px;
 }
 .trainers-disc{
     color:#fff
@@ -427,11 +426,13 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    
     background-color: rgb(0, 0, 0);
 }
 .trainer-holder{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap:50px;
 }
 .persona{
@@ -457,7 +458,6 @@ li{
 /*ФОРМА*/
 .forms{
     background-color:black;
-    height: 580px;
 }                    
 form { 
     width: 500px;
@@ -574,7 +574,6 @@ footer{
         grid-template-columns: repeat(auto-fill,minmax(300px,700px));
         justify-content: center;
     }
-    
     .about-text h2{
         font-size: 19px;
     }
@@ -599,7 +598,6 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-
     .card{
         margin-top: 25px;
         padding-bottom: 20px;
@@ -618,6 +616,7 @@ footer{
         flex: 1 1 200px;
         padding:5px;
         margin-left: 15px;
+        margin-right: 15px;
     }
 }
 
@@ -632,13 +631,13 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-}
-.about-text h2{
-    font-size: 22px;
-}
-.about-text p{
-    font-size: 18px;
-}
+    }
+    .about-text h2{
+        font-size: 22px;
+    }
+    .about-text p{
+        font-size: 18px;
+    }
 
 }
 
@@ -654,112 +653,164 @@ footer{
     .about-text p{
         font-size: 16px;
     }
+
+    .trainers-disc h2{
+    
+        font-size: 50px ;
+        
+    }
+    .trainers-disc p{
+        padding: 0px 115px;
+        font-size: 16px;
+    }
    
 }
 
-@media (max-width: 890px) {
 
-.header-logo{
-    font-size: 21px;
-}
-.nav-item{
-    font-size: 15px;
-    margin-left: 13px;
-}
-.tel{
-    font-size: 15px;
-}
-.button{
-        padding: 10px 12px;
+@media (max-width: 890px) {
+    .header-logo{
+        font-size: 21px;
+    }
+    .nav-item{
         font-size: 15px;
-}
-.about-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width:541px;
-}
-.best{
-    height: 100px;
-}
-.cards-holder{
-    padding-top: 20px;
-}
-.about-content{
-    height: 800px;
-}
+        margin-left: 13px;
+    }
+    .tel{
+        font-size: 15px;
+    }
+    .button{
+            padding: 10px 12px;
+            font-size: 15px;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width:541px;
+    }
+    .best{
+        height: 100px;
+    }
+    .cards-holder{
+        padding-top: 20px;
+    }
+    .about-content{
+        height: 800px;
+    }
+
+    .footer-logo{
+        padding-left: 60px;
+        font-size: 16px;
+    }
+    .footer-contacts{
+        margin-top: 10px;
+        padding-right: 35px;
+        padding-left: 10px;
+        
+    }
+    .footer-contacts p {
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: 500;}
+
+    .footer-social{
+        padding-left:55px;
+        font-size: 14px;
+    }
+
 }
 
 
 @media (max-width: 709px) {
-
-.header-title{
+    .header-title{
+            text-align: center;
+            padding-right: 80px;
+            font-size: 43px;
+            left:18%;
+    }
+    .header-subtitle2::before, .header-subtitle2::after{
+            display: none;
+    }
+    .best{
+        font-size: 45px;
+        font-weight: 400px;
+        padding-bottom: 0px;
+        height: 80px;
+    }
+    .services-holder{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .service-title{
+        font-size: 30px;
+        font-weight: 430;
+        padding-top: 5px;
+    }
+    .service-discrit{
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .image-service{
+        height: 240px;
+        width: 250px;
+    }
+    .fin-discript{
+        padding-top: 3px;
+    }
+    .diag-discript{
+        padding-top: 3px;
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        left: 15%;
-        margin-right: 50px;
-}
-.header-subtitle2::before, .header-subtitle2::after{
-        display: none;
-}
-.best{
-    font-size: 45px;
-    font-weight: 400px;
-    padding-bottom: 0px;
-    height: 80px;
-}
-.services-holder{
-    padding-left: 20px;
-    padding-right: 20px;
+        min-width:400px;
+    }
+    .about-image{
+        height: 365px;
+        width: 400px;
+    }
 
-}
-.service-title{
-    font-size: 30px;
-font-weight: 430;
-padding-top: 5px;
+    .footer-logo{
+        padding-left: 45px;
+        font-size: 14px;
+    }
+    .footer-contacts{
+        margin-top: 10px;
+        padding-right: 14px;
+        padding-left: 10px;
+        
+    }
+    .footer-contacts p {
+        margin: 5px 0;
+        font-size: 12px;
+        font-weight: 500;}
 
-}
-.service-discrit{
-    font-size: 18px;
-    padding-top: 20px;
-
-}
-.image-service{
-    height: 240px;
-    width: 250px;
-}
-.fin-discript{
-    padding-top: 3px;
-}
-.diag-discript{
-    padding-top: 3px;
-}
-.about-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width:400px;
-}
-.about-image{
-    height: 365px;
-    width: 400px;
+    .footer-social{
+        padding-left:35px;
+        font-size: 12px;
+    }
+    .trainers-disc h2{
+        font-size: 45px ;
+    }
+    .trainers-disc p{
+        padding: 0px 100px;
+        font-size: 14px;
+    }
 }
 
-
-}
 
 @media (max-width: 658px) { 
     .header-title{
-        left: 18%;
-        margin-right: 45px;
-        font-size: 35px;
-        
+        padding-right: 40px;
+        font-size: 40px ;
+        left:17%;
     }
     .header-subtitle{
         font-size: 45px;
         flex-wrap: nowrap;
         padding-top: 7px;
         padding-bottom: 7px;
-    
     }
     .header-line{
         justify-content: flex-start;
@@ -817,13 +868,11 @@ padding-top: 5px;
         background-color: rgba(0, 0, 0, 0.700);
         opacity: 0.9;
         overflow: auto;
-     
     }
     .nav._active{
         display: block;  
 
     }
-    
     .nav-item{
         margin: 0px 0px 30px 0px;
         text-align: left;
@@ -865,12 +914,18 @@ padding-top: 5px;
     .about-content{
         padding: 50px 135px;
     }
-  
-
+    .trainers-disc h2{
+        font-size: 45px ;
+    }
+    .trainers-disc p{
+        padding: 0px 40px;
+        font-size: 14px;
+    }
 }
 
-@media (max-width:545px){
 
+
+@media (max-width:574px){
     .container-subscribe{
         display: flex;
         flex-direction: column;
@@ -897,21 +952,87 @@ padding-top: 5px;
         font-size: 25px;
         font-weight: 400;
         padding-left: 10px;
-      
-    
     }
     .service-discrit{
         font-size: 14px;
         padding-top: 5px;
         padding-left: 10px;
-    
     }
     .image-service{
         height: 210px;
         width: 200px;
-        }
-        
     }
+
+    .best{
+        font-size: 40px;
+        padding-bottom: 10px;
+        padding-top: 45px;
+        height: 60px;
+        color:rgb(243, 227, 196);
+    }
+    .about-content{ /*флекс контейнер*/
+        gap: 40px;
+    }
+    .about-img{
+        min-width: 320px;
+        flex: 1 1 200px;
+        height: 284px;
+        margin:0px auto;
+    }
+    .about-image{
+        height: 284px;
+        width: 320px;
+    }
+    .burger_menu span, .burger_menu::before, .burger_menu::after{
+        margin-left: 365px;
+    }
+    form { 
+        width: 350px;
+    }
+    label { 
+ 
+        margin-top: 5px;
+  
+    }
+    .formtitle{
+        font-size: 40px;
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+    button { 
+        height: 35px;
+    }
+    .trainers-disc h2{
+            font-size: 40px ;
+        }
+    
+        .footer-logo{
+            padding-left: 30px;
+            font-size: 12px;
+        }
+        .footer-contacts{
+            margin-top: 10px;
+            padding-right: 14px;
+            padding-left: 10px;
+            
+        }
+        .footer-contacts p {
+            margin: 5px 0;
+            font-size: 12px;
+            font-weight: 400;}
+    
+        .footer-social{
+            padding-left:25px;
+            font-size: 12px;
+        }
+   
+    }
+        
+
+
+
+
+/*отсюда делать адаптацию по наитию*/
 
 @media (max-width: 465px){
     .sub{
@@ -933,14 +1054,14 @@ padding-top: 5px;
     }
     .service-discrit{
         font-size: 11px;
-padding-top: 0px;
-padding-left: 5px;
-padding-bottom: 10px;
-padding-right: 5px;
+        padding-top: 0px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-right: 5px;
     }
     .image-service{
         height: 170px;
-width: 180px;
+        width: 180px;
         }
 }
 
