@@ -1288,7 +1288,7 @@ margin-left: 0;
                     }
 }
 
-@media (max-width: 360px){
+@media (max-width: 365px){
     .burger_menu span, .burger_menu::before, .burger_menu::after{
         margin-left: 175px;
     }
@@ -1312,12 +1312,12 @@ margin-left: 0;
                 font-size: 17px;
                 }
                 .sub {
-                    padding: 0px 0px 10px 10px;
-                    height: 110px;
-                    font-size: 17px;
+                    padding: 0px 0px 10px 22px;
+height: 115px;
+font-size: 15px;
                     }
                     li {
-                        font-size: 11px;
+                        font-size: 10px;
                         }
 .card{
     width: 330px;
@@ -1332,5 +1332,13 @@ margin-left: 0;
     }
 }
 
+@media (max-width: 365px){
+.footer-social {
+    padding: 20px 0px 20px 12px;
+}
+.footer-contacts {
 
+    padding: 0px 0px 20px 82px;
+    }
+    }
 
