@@ -1240,6 +1240,11 @@ footer{
     height: 285px;
     width: 280px;
             }
+            footer {
+                background-color: #000000;
+                color: white;
+                padding: 80px 0px 20px 0px;
+                }
        
 }
 @media (max-width: 465px){
@@ -1259,6 +1264,21 @@ footer{
         font-size: 26px;
         left: 15%;
         } 
+}
+
+@media (max-width: 360px){
+.about-content {
+            padding: 25px 75px 20px 65px;
+            height: 810px;
+            }
+.about-img{
+            min-width: 260px;
+            height: 285px;
+        }
+.about-image {
+    height: 285px;
+    width: 260px;
+            }
 }
 
 
