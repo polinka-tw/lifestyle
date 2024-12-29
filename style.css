@@ -522,7 +522,6 @@ button:hover{
     background-color:brown;
 }
 
-
 /*футер*/
 footer{
     background-color: #000000;
@@ -533,6 +532,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
 }
 .footer-logo{
     padding-left: 80px;
@@ -559,7 +559,7 @@ footer{
 }
 
 .footer-a:hover {
-    color:rgb(40, 164, 164)
+    color:rgb(40, 164, 164);
 }
 .footer-adress{
     text-decoration: none;
@@ -1279,6 +1279,9 @@ footer{
     height: 285px;
     width: 260px;
             }
+.cards-holder{
+    padding-top: 40px;
+}
 }
 
 
