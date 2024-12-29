@@ -105,7 +105,7 @@ body{
 
 
 
-/*НАЧАЛЬНАЯ СТРАНИЦА2*/
+/*НАЧАЛЬНАЯ СТРАНИЦА 2*/
 .header-down{
     position:relative; /*родитель*/
 }
@@ -117,7 +117,7 @@ body{
     font-weight: 500;
     text-align: center;
     left: 275px;
-    margin-top: 310px;
+    margin-top: 370px;
     margin-bottom: 10px;
     
 }
@@ -166,6 +166,8 @@ body{
 }
 
 
+
+
 /*ЛУЧШАЯ ВЕРСИЯ СЕБЯ*/
 .container-best{
     background-color: rgb(0, 0, 0);
@@ -175,17 +177,19 @@ body{
     color:rgb(255, 255, 255);
     font-size: 65px;
     font-weight: 400px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     padding-top: 45px;
     height: 70px;
     color:rgb(243, 227, 196);
 }
 
 
+
+
 /*О НАС*/
 .adout_us{
     background-color:black ;
-    background: linear-gradient(to bottom, black, 65% , rgb(187, 226, 232));
+    background: linear-gradient(to bottom, black, 70% , rgb(187, 226, 232));
 }
 .about-content{ /*флекс контейнер*/
     color:rgb(243, 227, 196);
@@ -195,7 +199,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
     text-align: justify;
 }
 .about-img{
@@ -220,6 +223,8 @@ body{
 }
 
 
+
+
 /*КАРТОЧКИ*/
 .container-cards{
     background-color: rgb(187, 226, 232);
@@ -231,6 +236,7 @@ body{
 .cards-holder{
     display: flex;
     justify-content: center;
+    padding-top: 65px;
 }
 .card{
     box-shadow: 10px 13px 25px 15px #0000001A;
@@ -291,6 +297,8 @@ body{
 }
 
 
+
+
 /*ПОДПИСКА*/
 .sub-discription{
     font-size: 35px;
@@ -338,6 +346,8 @@ li{
     margin-top: 45px;
 }
    
+
+
 
 /*верстка с помощью грид*/
 .services-holder{
@@ -401,6 +411,8 @@ li{
 
 
 
+
+
 .trainers{
     background-color: black;
 }
@@ -410,18 +422,18 @@ li{
 .trainers-disc h2{
     text-align: center;
     margin-top:-10px;
-    padding-top: 60px;
+    padding-top: 70px;
     font-weight: 500;
     font-size: 54px ;
+    color:rgb(243, 227, 196);
     
 }
 .trainers-disc p{
     text-align: center;
-    padding: 0px 160px;
+    padding: 0px 175px;
     font-size: 18px;
+    color:rgb(243, 227, 196);
 }
-
-
 .personal-trainers-container{
     display: flex;
     justify-content: center;
@@ -436,15 +448,13 @@ li{
     gap:50px;
 }
 .persona{
-   
     width: 200px;
     height: 300px;
     margin-right: 30px;
     margin-top: 30px;
     margin-bottom: 75px;
     background-color: #fff;
-   color: #fff;
-   
+    color:rgb(243, 227, 196);
 }
 .img-trainer{
     height: 300px;
@@ -453,6 +463,8 @@ li{
     justify-content: center;
     padding-bottom: 5px;
 }
+
+
 
 
 /*ФОРМА*/
@@ -489,8 +501,8 @@ input, textarea {
     font-weight: 500;
     color:rgb(243, 227, 196);
     text-decoration: none;
-    padding-bottom: 40px;
-    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 64px;
 
 }
 button { 
@@ -511,12 +523,11 @@ button:hover{
 }
 
 
-
+/*футер*/
 footer{
     background-color: #000000;
     color: white;
-    padding: 20px;
-          
+    padding: 100px 0px 20px 0px;     
 }
 .footer-container{
     display: flex;
@@ -531,7 +542,6 @@ footer{
 .footer-contacts{
     margin-top: 10px;
     padding-right: 75px;
-    
 }
 .footer-contacts p {
     margin: 5px 0;
@@ -588,6 +598,9 @@ footer{
     .about-content{
         gap: 60px;
     }
+    .trainers-disc p {
+        padding: 0px 145px;
+        }
 
 }
 
@@ -618,6 +631,10 @@ footer{
         margin-left: 15px;
         margin-right: 15px;
     }
+    .trainers-disc p {
+        padding: 0px 135px;
+    }
+
 }
 
 @media (max-width: 1125px){
@@ -638,6 +655,12 @@ footer{
     .about-text p{
         font-size: 18px;
     }
+    .trainer-holder {
+        gap: 35px;
+    }
+    .persona{
+        margin-right: 20px;
+    }
 
 }
 
@@ -655,13 +678,21 @@ footer{
     }
 
     .trainers-disc h2{
-    
         font-size: 50px ;
-        
     }
     .trainers-disc p{
         padding: 0px 115px;
         font-size: 16px;
+    }
+    .trainer-holder {
+        gap: 25px;
+    }
+    .persona{
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+    .sub{
+        padding: 0px 0px 10px 50px;
     }
    
 }
@@ -797,6 +828,12 @@ footer{
         padding: 0px 100px;
         font-size: 14px;
     }
+    .trainer-holder {
+        gap: 15px;
+        }
+    .about-content {
+            padding-bottom: 50px;
+    }
 }
 
 
@@ -804,7 +841,6 @@ footer{
     .header-title{
         padding-right: 40px;
         font-size: 40px ;
-        left:17%;
     }
     .header-subtitle{
         font-size: 45px;
@@ -884,13 +920,16 @@ footer{
     
     }
     .sub{
-        font-size: 22px;
+        font-size: 20px;
     }
+
     li{
         font-size: 16px;
+
     }
     .day-fit p{
         font-size: 16px;
+        margin-top: 6px;
     }
     .service-title{
         font-size: 28px;
@@ -928,19 +967,25 @@ footer{
 @media (max-width:574px){
     .container-subscribe{
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-items: center;
         padding-bottom: 120px;
     }
     .sub{
-    width: 250px; 
-    height: 170px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px 0px 0px 110px;
-    font-size: 22px;
+        font-size: 18px;
+        height: 120px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+    .day-fit p {
+            font-size: 14px;
+            margin-top: 6px;
+            }
+    .sub-discription {
+        font-size: 32px;
+        padding: 30px 15px 15px 15px;
     }
 
     .service{
@@ -1004,18 +1049,17 @@ footer{
     }
     .trainers-disc h2{
             font-size: 40px ;
-        }
+    }
     
-        .footer-logo{
+    .footer-logo{
             padding-left: 30px;
             font-size: 12px;
-        }
-        .footer-contacts{
+    }
+    .footer-contacts{
             margin-top: 10px;
             padding-right: 14px;
-            padding-left: 10px;
-            
-        }
+            padding-left: 10px; 
+    }
         .footer-contacts p {
             margin: 5px 0;
             font-size: 12px;
@@ -1029,14 +1073,135 @@ footer{
     }
         
 
+    @media (max-width: 533px)   {
+
+        .burger_menu span, .burger_menu::before, .burger_menu::after{
+            margin-left: 325px;
+        }
+        .header-title {
+            padding-right: 50px;
+            font-size: 35px;
+            }
+        .about-content {
+                padding: 30px 105px;
+                height: 750px;
+                }
+                .best {
+                    font-size: 35px;
+                    padding-bottom: 10px;
+                    padding-top: 45px;
+                    height: 60px;
+                    }
+        .about-img{
+                    min-width: 310px;
+                    flex: 1 1 200px;
+                    height: 285px;
+                    margin:0px auto;
+                }
+        .about-image {
+            height: 285px;
+            width: 310px;
+                    }
+                    .container-subscribe {
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        padding-bottom: 100px;
+                        }
+        .sub {
+                        padding: 0px 0px 10px 30px;
+                        height: 100px;
+                        }
+
+    }
+ 
 
 
 
+
+
+
+
+
+
+    @media (max-width: 498px){
+        .burger_menu span, .burger_menu::before, .burger_menu::after{
+            margin-left: 285px;
+        }   
+        .header-title {
+            padding-right: 30px;
+            font-size: 30px;
+            left: 23%;
+        }   
+        .best {
+            font-size: 35px;
+            height: 50px;
+            } 
+        .sub-discription {
+                font-size: 28px;
+                padding: 25px 15px 15px 15px;
+                } 
+        .sub {
+                    padding: 0px 0px 10px 20px;
+                    height: 90px;
+        }
+                    .trainers-disc h2{
+                        font-size: 38px ;
+                    }
+                    .footer-container{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                    .footer-logo{
+                        font-size:16px;
+                        padding-left: 0px;
+                    }
+                    .footer-contacts{
+                    margin-top: 0px;
+                        padding-right: 14px;
+                        padding: 0px 0px 20px 75px;
+                        
+                    }
+                    .footer-contacts p {
+                        margin: 5px 0;
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                
+                    .footer-social{
+                        padding: 20px 0px 20px 15px;
+                        font-size: 16px;
+                    }
+                .formtitle{
+                    font-size: 30px;
+                }
+                form {
+                    width: 300px;
+                    padding: 10px 20px;
+                    }
+                }
+
+
+
+                
 /*отсюда делать адаптацию по наитию*/
-
 @media (max-width: 465px){
+    .header-title {
+        padding-right: 30px;
+        font-size: 28px;
+        left: 22%;
+        margin-top: 320px;
+        }
+        .header-subtitle2 {
+            padding-bottom: 10px;
+            }
+    .best {
+        font-size: 32px;
+        }
     .sub{
-        font-size: 20px;
+        font-size: 19px;
     }
     li{
         font-size: 13px;
@@ -1049,8 +1214,6 @@ footer{
         font-weight: 400;
         padding-left: 5px;
         padding-right: 5px;
-      
-    
     }
     .service-discrit{
         font-size: 11px;
@@ -1063,7 +1226,41 @@ footer{
         height: 170px;
         width: 180px;
         }
+        .about-content {
+            padding: 25px 75px;
+            height: 780px;
+            }
+        .about-img{
+            min-width: 280px;
+            flex: 1 1 200px;
+            height: 285px;
+            margin:0px auto;
+        }
+    .about-image {
+    height: 285px;
+    width: 280px;
+            }
+       
 }
+@media (max-width: 465px){
+    .burger_menu span, .burger_menu::before, .burger_menu::after{
+        margin-left: 235px;
+    }  
+    .header-title {
+        font-size: 27px;
+        left: 20%;
+        } 
+}
+@media (max-width: 420px){
+    .burger_menu span, .burger_menu::before, .burger_menu::after{
+        margin-left: 215px;
+    }  
+    .header-title {
+        font-size: 26px;
+        left: 15%;
+        } 
+}
+
 
 
 
