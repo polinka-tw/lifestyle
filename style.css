@@ -1,9 +1,12 @@
 html{
     scroll-behavior: smooth;
+        overflow-x: hidden;
+
 }
 body{
-    margin:0;
+    margin:0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
 
 
@@ -404,6 +407,7 @@ li{
     justify-self: center;
     align-self: center;
 }
+
 .image-service{
     height: 269px;
     width: 290px;
@@ -1125,8 +1129,10 @@ footer{
 
 
     @media (max-width: 498px){
+      
         .burger_menu span, .burger_menu::before, .burger_menu::after{
-            margin-left: 285px;
+            margin-left: 275px;
+    
         }   
         .header-title {
             padding-right: 30px;
@@ -1186,10 +1192,10 @@ footer{
 
 
                 
-/*отсюда делать адаптацию по наитию*/
+
 @media (max-width: 465px){
     .burger_menu span, .burger_menu::before, .burger_menu::after{
-        margin-left: 235px;
+        margin-left: 225px;
     }  
     .header-title {
         padding-right: 30px;
@@ -1234,14 +1240,13 @@ footer{
     }
     .service-discrit{
         font-size: 11px;
-        padding-top: 0px;
-        padding-left: 5px;
-        padding-bottom: 10px;
-        padding-right: 5px;
+      
+        padding-bottom: 20px;
+
     }
     .image-service{
-        height: 170px;
-        width: 180px;
+        height: 160px;
+        width: 170px;
         }
     footer {
      padding: 80px 0px 20px 0px;
@@ -1253,6 +1258,9 @@ footer{
     .burger_menu span, .burger_menu::before, .burger_menu::after{
         margin-left: 215px;
     }  
+    .header-line{
+        margin: 0;
+    }
     .header-title {
         font-size: 26px;
         left: 15%;
@@ -1260,22 +1268,69 @@ footer{
         .about-content {
             padding: 25px 75px;
             height: 830px;
+           
             }
+            .service-title{
+                font-size: 20px;
+            }
+            .service-discrit{
+                font-size: 10px;
+                
+            }
+            .image-service{
+                height: 150px;
+                width: 160px;
+                }
+                .card {
+                    margin-right: 0;
+margin-left: 0;
+
+                    }
 }
 
 @media (max-width: 360px){
-
+    .burger_menu span, .burger_menu::before, .burger_menu::after{
+        margin-left: 175px;
+    }
+    .header-logo {
+        font-size: 22px;
+        margin-left: 31px;
+        }
+.about-content {
+            padding: 25px 45px;
+            height: 835px;
+            }
 .about-img{
-            min-width: 260px;
-            height: 285px;
+    min-width: 260px;
+    height: 285px;
         }
 .about-image {
     height: 285px;
     width: 260px;
             }
-
+            .service-title {
+                font-size: 17px;
+                }
+                .sub {
+                    padding: 0px 0px 10px 10px;
+                    height: 110px;
+                    font-size: 17px;
+                    }
+                    li {
+                        font-size: 11px;
+                        }
+.card{
+    width: 330px;
 }
+.header-title {
+    font-size: 23px;
 
+    }
+    .service-discrit{
+       
+        padding-bottom: 30px;
+    }
+}
 
 
 
