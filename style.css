@@ -13,7 +13,8 @@ body{
 /*НАЧАЛЬНАЯ СТРАНИЦА*/
 .header{
     background: url('фон1.jpeg');
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 140vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
